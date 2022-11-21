@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: silver;
+    padding: 20px;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    margin: 0 auto;
+
+}
+input{
+    border: 2px solid teal;
+    font-size: 20px;
+    height: 40px;
+    width: 500px;
+    padding-left: 5px;
+    border: 4px solid rgb(68, 92, 92);
+    transition: all .6s ease;
+}
+input:focus{
+    height: 50px;
+    width: 520px;
+    border-radius: 10px;
+    background-color: rgb(64, 126, 197);
+    color: #f2f2f2;
+}
+input::placeholder{
+    font-weight: 700;
+    color: rgb(84, 85, 86);
+}
+input:focus::placeholder{
+    color: rgb(214, 193, 193);
+}
+
+#create_button{
+    width: 200px;
+    height: 40px;
+    border: 4px solid rgb(6, 77, 77);
+    cursor: pointer;
+    background-color: rgb(60, 129, 154);
+    font-size: 22px;
+    font-weight: 500;
+    color: gold;
+    border-radius: 15px;
+    transition: all .5s ease;
+}
+#create_button:hover{
+    transform: scale(1.15);
+    background-color: rgb(27, 125, 160);
+
+}
+#todo__list{
+    align-items: center;
+    width: 750px;
+    margin: 20px auto;
+    border: 4px solid rgb(71, 152, 232);
+    border-radius: 15px;
+}
+#todo__list p{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(14, 64, 80);
+    text-transform: capitalize;
+    line-height: 35px;
+    padding-left: 10px;
+    overflow-wrap: break-word;
+}
